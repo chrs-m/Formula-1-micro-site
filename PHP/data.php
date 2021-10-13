@@ -1,5 +1,8 @@
 <?php
 
+declare(strict_types=1);
+
+
 $drivers = [
     ['name' => 'Lewis Hamilton', 'team' => 'Mercedes-AMG Petronas F1 Team', 'birthYear' => 1985, 'wins' => 100],
     ['name' => 'Valtteri Bottas', 'team' => 'Mercedes-AMG Petronas F1 Team', 'birthYear' => 1989, 'wins' => 10],
@@ -13,10 +16,10 @@ $drivers = [
 ];
 
 $teams = [
-    ['name' => 'Mercedes-AMG Petronas F1 Team', 'year' => 1970, 'drivers' => 'Lewis Hamilton & Valtteri Bottas', 'Championchips' => 7, 'Team principal' => 'Toto Wolff'],
-    ['name' => 'Red Bull Racing Honda', 'year' => 1997, 'drivers' => 'Max Verstappen & Sergio Perez', 'Championchips' => 4, 'Team principal' => 'Christian Horner'],
-    ['name' => 'McLaren F1 Team', 'year' => 1966, 'drivers' => 'Daniel Ricciardo & Lando Norris', 'Championchips' => 8, 'Team principal' => 'Andreas Seidl'],
-    ['name' => 'Scuderia Ferrari Mission Winnow', 'year' => 1950, 'drivers' => 'Charles Leclerc & LCarlos Sainz', 'Championchips' => 16, 'Team principal' => 'Mattia Binotto'],
+    ['name' => 'Mercedes-AMG Petronas F1 Team', 'year' => 1970, 'drivers' => 'Lewis Hamilton, Valtteri Bottas', 'Championchips' => 7, 'Team principal' => 'Toto Wolff'],
+    ['name' => 'Red Bull Racing Honda', 'year' => 1997, 'drivers' => 'Max Verstappen, Sergio Perez', 'Championchips' => 4, 'Team principal' => 'Christian Horner'],
+    ['name' => 'McLaren F1 Team', 'year' => 1966, 'drivers' => 'Daniel Ricciardo, Lando Norris', 'Championchips' => 8, 'Team principal' => 'Andreas Seidl'],
+    ['name' => 'Scuderia Ferrari Mission Winnow', 'year' => 1950, 'drivers' => 'Charles Leclerc, LCarlos Sainz', 'Championchips' => 16, 'Team principal' => 'Mattia Binotto'],
 ];
 
 
