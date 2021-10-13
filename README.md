@@ -1,4 +1,4 @@
-INSERT MANDATORY GIF
+<img src="https://media.giphy.com/media/iJDLBX5GY8niCpZYkR/giphy.gif" width="100%">
 
 # Project Title
 
