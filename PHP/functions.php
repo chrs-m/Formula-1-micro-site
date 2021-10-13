@@ -5,7 +5,7 @@ declare(strict_types=1);
 require __DIR__ . '/data.php';
 
 
-function getTeamFromDriver($driverList, $driver)
+function getTeamFromDriver(array $driverList, string $driver): array
 {
     $returnTeam = [];
     foreach ($driverList as $name) {
@@ -19,7 +19,7 @@ function getTeamFromDriver($driverList, $driver)
 // print_r(getTeamFromDriver($drivers, 'Lewis Hamilton'));
 
 
-function getDriversFromTeam($driverList, $team)
+function getDriversFromTeam(array $driverList, string $team): array
 {
     $returnTeam = [];
     foreach ($driverList as $name) {
@@ -30,4 +30,4 @@ function getDriversFromTeam($driverList, $team)
     }
     return $returnTeam;
 };
-// print_r(getDriversFromTeam($drivers, 'McLaren F1 Team'));
+print_r(getDriversFromTeam($drivers, 'McLaren F1 Team'));
