@@ -31,3 +31,17 @@ function getDriversFromTeam(array $driverList, string $team): array
     return $returnTeam;
 };
 print_r(getDriversFromTeam($drivers, 'McLaren F1 Team'));
+
+
+function isWinnerThisSeason(array $drivers): void
+{
+    foreach ($drivers as $driver) {
+        if ($driver['wonThisSeason'] === true) {
+            echo $driver['name'] . " (" . $driver['team'] . ")" . " is a winner this season.\n";
+        } else {
+            continue;
+        }
+    }
+};
+
+(isWinnerThisSeason($drivers));
