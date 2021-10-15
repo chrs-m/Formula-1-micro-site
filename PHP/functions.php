@@ -30,7 +30,7 @@ function getDriversFromTeam(array $driverList, string $team): array
     }
     return $returnTeam;
 };
-print_r(getDriversFromTeam($drivers, 'McLaren F1 Team'));
+// print_r(getDriversFromTeam($drivers, 'McLaren F1 Team'));
 
 
 function isWinnerThisSeason(array $drivers): void
@@ -44,4 +44,4 @@ function isWinnerThisSeason(array $drivers): void
     }
 };
 
-(isWinnerThisSeason($drivers));
+// (isWinnerThisSeason($drivers));

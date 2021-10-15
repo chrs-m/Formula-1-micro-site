@@ -8,28 +8,24 @@ require __DIR__ . '/functions.php';
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Formula 1 info</title>
+
+    <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/buttons.css" />
     <link rel="stylesheet" href="CSS/navigation.css" />
     <script src="https://cdn-tailwindcss.vercel.app/"></script>
-    <title>Formula 1 Facts</title>
 </head>
 
-<body>
-    <nav class="navbar w-full justify-between bg-red-700">
-        <div class="logo">
-            <img src="https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg" alt="F1 logo" srcset="" />
-        </div>
-        <div>
-            <div class="topnav">
-                <a class="active" href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <input type="text" placeholder="Search.." />
-            </div>
-        </div>
-    </nav>
+<body class="font-sans leading-none tracking-normal">
+    <div class="flex">
+        <div class="w-full md:w-4/5 md:ml-auto lg:ml-auto">
