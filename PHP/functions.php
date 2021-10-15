@@ -45,3 +45,10 @@ function isWinnerThisSeason(array $drivers): void
 };
 
 // (isWinnerThisSeason($drivers));
+
+function age(int $birthyear): int
+{
+    return (date('Y')) - $birthyear;
+}
+
+// echo age($drivers);
