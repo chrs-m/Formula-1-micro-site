@@ -2,7 +2,7 @@
 <?php require __DIR__ . '/PHP/header.php'; ?>
 
 <!-- start -->
-<?php require __DIR__ . '/PHP/start.php'; ?>
+
 
 
 <!--Sidebar/navbar-->

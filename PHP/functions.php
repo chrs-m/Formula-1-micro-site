@@ -11,7 +11,7 @@ function getTeamFromDriver(array $driverList, string $driver): array
     foreach ($driverList as $name) {
         // print_r($name['name'] . "\n");
         if ($name['name'] === $driver) {
-            array_push($returnTeam, $name);
+            array_push($returnTeam, $name['team']);
         }
     }
     return $returnTeam;
@@ -21,14 +21,14 @@ function getTeamFromDriver(array $driverList, string $driver): array
 
 function getDriversFromTeam(array $driverList, string $team): array
 {
-    $returnTeam = [];
+    $returnDriver = [];
     foreach ($driverList as $name) {
         // print_r($name['name'] . "\n");
         if ($name['team'] === $team) {
-            array_push($returnTeam, $name);
+            array_push($returnDriver, $name['name']);
         }
     }
-    return $returnTeam;
+    return $returnDriver;
 };
 // print_r(getDriversFromTeam($drivers, 'McLaren F1 Team'));
 
