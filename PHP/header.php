@@ -26,6 +26,6 @@ require __DIR__ . '/functions.php';
     <script src="https://cdn-tailwindcss.vercel.app/"></script>
 </head>
 
-<body class="font-sans leading-none tracking-normal">
-    <div class="flex">
-        <div class="w-full md:w-4/5 md:ml-auto lg:ml-auto">
+<body class="w-full md:w-4/5 md:ml-auto lg:ml-auto">
+
+    <div class="flex mt-100 justify-center justify-items-center content-center items-center"">

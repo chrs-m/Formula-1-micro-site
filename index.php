@@ -1,7 +1,12 @@
 <!-- header -->
 <?php require __DIR__ . '/PHP/header.php'; ?>
 
-<!-- start -->
+<!-- Content -->
+<div class="">
+    <div class="">
+        <p class="font-bold">Welcome to this Formula 1 mini-site! 🏎</p>
+    </div>
+</div>
 
 
 

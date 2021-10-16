@@ -7,7 +7,7 @@ $drivers = [
     [
         'name' => 'Lewis Hamilton',
         'image' => 'https://www.formula1.com/content/dam/fom-website/drivers/L/LEWHAM01_Lewis_Hamilton/lewham01.png.transform/2col-retina/image.png',
-        'team' => 'Mercedes-AMG Petronas F1',
+        'team' => 'Mercedes-AMG Petronas F1 Team',
         'birthYear' => 1985,
         'nationality' => 'Great Britain',
         'wins' => 100,
@@ -16,7 +16,7 @@ $drivers = [
     [
         'name' => 'Valtteri Bottas',
         'image' => 'https://www.formula1.com/content/dam/fom-website/drivers/V/VALBOT01_Valtteri_Bottas/valbot01.png.transform/2col-retina/image.png',
-        'team' => 'Mercedes-AMG Petronas F1',
+        'team' => 'Mercedes-AMG Petronas F1 Team',
         'birthYear' => 1989,
         'nationality' => 'Finland',
         'wins' => 10,
@@ -61,7 +61,7 @@ $drivers = [
     [
         'name' => 'Charles Leclerc',
         'image' => 'https://www.formula1.com/content/dam/fom-website/drivers/C/CHALEC01_Charles_Leclerc/chalec01.png.transform/2col-retina/image.png',
-        'team' => 'Scuderia Ferrari Mission',
+        'team' => 'Scuderia Ferrari Mission Winnow',
         'birthYear' => 1997,
         'nationality' => 'Monaco',
         'wins' => 2,
@@ -70,7 +70,7 @@ $drivers = [
     [
         'name' => 'Carlos Sainz',
         'image' => 'https://www.formula1.com/content/dam/fom-website/drivers/C/CARSAI01_Carlos_Sainz/carsai01.png.transform/2col-retina/image.png',
-        'team' => 'Scuderia Ferrari Mission',
+        'team' => 'Scuderia Ferrari Mission Winnow',
         'birthYear' => 1994,
         'nationality' => 'Spain',
         'wins' => 0,

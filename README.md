@@ -10,7 +10,7 @@ Add the installation instructions.
 
 # Code Review
 
-Code review written by [XYZ](https://github.com/username).
+Code review written by [Marcus Hägerstrand](https://github.com/marcusxyz).
 
 1. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
 2. `example.js:10-15` - Remember to think about X and this could be refactored using the amazing Y function.
