@@ -24,6 +24,12 @@ body {
   text-transform: uppercase;
 }
 
+.time-to-race {
+  margin-top: 60px;
+  text-transform: none;
+  animation: text 4s ease;
+}
+
 .text {
   animation: text 2s ease-in-out;
   font-family: 'Titillium Web', sans-serif;

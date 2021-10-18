@@ -7,7 +7,7 @@
         <?php foreach ($teams as $team) : ?>
             <?php
             $driversFromTeam = getDriversFromTeam($drivers, $team['name']);
-            $driversString = implode(", ", $driversFromTeam);
+            $driversString = implode(" & ", $driversFromTeam);
             ?>
             <article class="grid justify-items-center mb-20 sm:text-xs">
                 <img class="scale-75 motion-safe:hover:scale-90" src="<?php echo $team['image']; ?>" alt="<?php echo $team['name']; ?>">
