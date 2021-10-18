@@ -166,13 +166,3 @@ $races = [
     ['location' => 'Saudi Arabia', 'date' => '1638662400', 'dateTime' => '2021-12-05 18:30:00', 'circuit' => 'Jeddah Corniche Circuit'],
     ['location' => 'Abu Dhabi', 'date' => '1639267200', 'dateTime' => '2021-12-12 14:00:00', 'circuit' => 'Yas Marina Circuit'],
 ];
-
-// Fixa en strtotime och next function
-
-
-// USA 2021-10-24 = 1635033600
-// Mexico 2021-11-07 = 1636243200
-// Brazil 2021-11-14 = 1636848000
-// Qatar 2021-11-21 = 1637452800
-// Saudi Arabia 2021-12-05 = 1638662400
-// Abu Dhabi 2021-12-12 = 1639267200
