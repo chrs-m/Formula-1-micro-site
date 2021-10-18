@@ -42,10 +42,10 @@ body {
 }
 
 .animation.one {
-  animation: reveal1 2s ease-in-out;
+  animation: reveal1 1.5s ease-in-out;
 }
 .animation.two {
-  animation: reveal2 2s ease-in-out;
+  animation: reveal2 1.5s ease-in-out;
 }
 
 .pb-1 a {
@@ -56,7 +56,7 @@ body {
   align-items: center;
   text-align: center;
   font-size: 4rem;
-  animation: reveal3 2s ease-out;
+  animation: reveal3 1.5s ease-out;
 }
 
 @keyframes reveal1 {
