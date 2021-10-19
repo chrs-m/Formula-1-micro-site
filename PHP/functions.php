@@ -33,7 +33,7 @@ function getDriversFromTeam(array $driverList, string $team): array
 // print_r(getDriversFromTeam($drivers, 'McLaren F1 Team'));
 
 
-function isWinnerThisSeason(array $drivers): void
+function isDriverAWinnerThisSeason(array $drivers): void
 {
     foreach ($drivers as $driver) {
         if ($driver['wonThisSeason'] === true) {
@@ -44,7 +44,10 @@ function isWinnerThisSeason(array $drivers): void
     }
 };
 
-// (isWinnerThisSeason($drivers));
+function isWinnerThisSeason(bool $hasWon): string
+{
+    return $hasWon ? "Yes" : "No";
+};
 
 function age(int $birthyear): int
 {
@@ -66,7 +69,7 @@ function age(int $birthyear): int
 //     echo "$days_remaining days and $hours_remaining hours left";
 // }
 
-function nextRace($races)
+function nextRace(array $races): array
 {
     $i = 0;
 
@@ -104,7 +107,7 @@ function getTimeToNextRace(array $races): string
     //    if ($sec) echo "$sec Seconds ";
     // echo "Remaining...";
 
-    $timeLeft = "$day Days $hr Hours $min Minutes Remaining..";
+    $timeLeft = "$day Days $hr Hours $min Minutes Remaining";
 
     return $timeLeft;
 }

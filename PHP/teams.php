@@ -16,6 +16,8 @@
                     <p class="sm:text-lg text-xs text-center"><?php echo "Drivers: " . $driversString; ?></p>
                     <p class="sm:text-lg text-xs"><?php echo "Team Principal: " . $team['teamPrincipal']; ?></p>
                     <p class="sm:text-lg text-xs"><?php echo "Championchips: " . $team['championchips']; ?></p>
+                    <p class="sm:text-lg text-xs"><?php echo "Race wins: " . $team['wins']; ?></p>
+                    <p class="sm:text-lg text-xs"><?php echo "Race debut: " . $team['year']; ?></p>
                 </div>
             </article>
         <?php endforeach; ?>

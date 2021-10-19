@@ -14,6 +14,8 @@
                         <p class="sm:text-lg text-xs text-center"><?php echo "Nationality: " . $driver['nationality']; ?></p>
                         <p class="sm:text-lg text-xs text-center"><?php echo "Age: " . age($driver['birthYear']); ?></p>
                         <p class="sm:text-lg text-xs text-center"><?php echo "Wins: " . $driver['wins']; ?></p>
+                        <p class="sm:text-lg text-xs text-center"><?php echo "Won this season: " . isWinnerThisSeason($driver['wonThisSeason']); ?></p>
+
                     </div>
                 </article>
             <?php endforeach; ?>

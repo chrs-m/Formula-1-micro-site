@@ -24,9 +24,13 @@ body {
   text-transform: uppercase;
 }
 
+.block article {
+  position: relative;
+}
+
 .race-info {
   text-transform: none;
-  animation: text 4s ease;
+  animation: text 3.5s ease;
 }
 
 .text {
@@ -37,6 +41,10 @@ body {
   font-size: 2rem;
   text-align: center;
   display: hidden;
+}
+
+.one {
+  font-size: 2.5rem;
 }
 
 .animation {
@@ -62,21 +70,61 @@ body {
   align-items: center;
   text-align: center;
   font-size: 4rem;
-  animation: reveal3 1.5s ease-out;
+  animation: reveal3 1s ease-out;
+}
+
+.emoji-orbit {
+  position: absolute;
+  display: inline-block;
+  opacity: 0;
+  top: calc(50% - 36px);
+  left: calc(50% - 24px);
+  font-size: 3rem;
+  animation: orbit 3s linear infinite 2.5s;
 }
 
 @keyframes reveal1 {
   0% {
     transform: translate(100%, 0);
-    background-color: rgb(212, 35, 35);
+    bbackground: #ed213a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #93291e,
+      #ed213a
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #93291e,
+      #ed213a
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   50% {
-    background-color: rgb(212, 35, 35);
+    background: #ed213a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #93291e,
+      #ed213a
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #93291e,
+      #ed213a
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     transform: translate(0%, 0);
   }
   100% {
-    background-color: rgb(212, 35, 35);
+    background: #ed213a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #93291e,
+      #ed213a
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #93291e,
+      #ed213a
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     transform: translate(-100%, 0);
   }
@@ -84,15 +132,45 @@ body {
 @keyframes reveal2 {
   0% {
     transform: translate(100%, 0);
-    background-color: rgb(212, 35, 35);
+    background: #ed213a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #93291e,
+      #ed213a
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #93291e,
+      #ed213a
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
   50% {
-    background-color: rgb(212, 35, 35);
+    background: #ed213a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #93291e,
+      #ed213a
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #93291e,
+      #ed213a
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     transform: translate(0%, 0);
   }
   100% {
-    background-color: rgb(212, 35, 35);
+    background: #ed213a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #93291e,
+      #ed213a
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #93291e,
+      #ed213a
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     transform: translate(-100%, 0);
   }
@@ -116,6 +194,17 @@ body {
     opacity: 0;
   }
   99% {
+    opacity: 1;
+  }
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(250px) rotate(-90deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(360deg) translateX(250px) rotate(-90deg);
     opacity: 1;
   }
 }
