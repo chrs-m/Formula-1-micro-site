@@ -21,6 +21,7 @@ require __DIR__ . '/functions.php';
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="CSS/buttons.css" />
     <link rel="stylesheet" href="CSS/navigation.css" />
+    <link rel="stylesheet" href="../CSS/navigation.css" />
     <script src="https://cdn-tailwindcss.vercel.app/"></script>
 </head>
 

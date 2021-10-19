@@ -55,10 +55,10 @@ body {
 }
 
 .animation.one {
-  animation: reveal1 1.5s ease-in-out;
+  animation: textRevealOne 1.5s ease-in-out;
 }
 .animation.two {
-  animation: reveal2 1.5s ease-in-out;
+  animation: textRevealTwo 1.5s ease-in-out;
 }
 
 .pb-1 a {
@@ -67,10 +67,13 @@ body {
 
 .emoji {
   opacity: 0;
-  align-items: center;
-  text-align: center;
-  font-size: 4rem;
-  animation: reveal3 1s ease-out;
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  top: calc(40% - 72px);
+  left: calc(40% - 48px);
+  font-size: 5rem;
+  animation: emojiReveal 1s ease-out;
 }
 
 .emoji-orbit {
@@ -83,99 +86,51 @@ body {
   animation: orbit 3s linear infinite 2.5s;
 }
 
-@keyframes reveal1 {
+@keyframes textRevealOne {
   0% {
     transform: translate(100%, 0);
     bbackground: #ed213a; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #93291e,
-      #ed213a
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #93291e,
-      #ed213a
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #93291e, #ed213a);
+    background: linear-gradient(to right, #93291e, #ed213a);
   }
   50% {
     background: #ed213a; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #93291e,
-      #ed213a
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #93291e,
-      #ed213a
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #93291e, #ed213a);
+    background: linear-gradient(to right, #93291e, #ed213a);
 
     transform: translate(0%, 0);
   }
   100% {
     background: #ed213a; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #93291e,
-      #ed213a
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #93291e,
-      #ed213a
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #93291e, #ed213a);
+    background: linear-gradient(to right, #93291e, #ed213a);
 
     transform: translate(-100%, 0);
   }
 }
-@keyframes reveal2 {
+@keyframes textRevealTwo {
   0% {
     transform: translate(100%, 0);
     background: #ed213a; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #93291e,
-      #ed213a
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #93291e,
-      #ed213a
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #93291e, #ed213a);
+    background: linear-gradient(to right, #93291e, #ed213a);
   }
   50% {
     background: #ed213a; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #93291e,
-      #ed213a
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #93291e,
-      #ed213a
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #93291e, #ed213a);
+    background: linear-gradient(to right, #93291e, #ed213a);
 
     transform: translate(0%, 0);
   }
   100% {
     background: #ed213a; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #93291e,
-      #ed213a
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #93291e,
-      #ed213a
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #93291e, #ed213a);
+    background: linear-gradient(to right, #93291e, #ed213a);
 
     transform: translate(-100%, 0);
   }
 }
-@keyframes reveal3 {
+@keyframes emojiReveal {
   0% {
     opacity: 1;
     transform: translate(100%, 0);
@@ -200,11 +155,11 @@ body {
 
 @keyframes orbit {
   from {
-    transform: rotate(0deg) translateX(250px) rotate(-90deg);
+    transform: rotate(0deg) translateX(220px) rotate(-90deg);
     opacity: 1;
   }
   to {
-    transform: rotate(360deg) translateX(250px) rotate(-90deg);
+    transform: rotate(360deg) translateX(220px) rotate(-90deg);
     opacity: 1;
   }
 }
