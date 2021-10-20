@@ -7,6 +7,7 @@
               text-center
               fixed
               bottom-0
+              mb-0
               md:pt-8 md:top-0 md:left-0
               h-10
               md:h-screen md:border-r-4 md:border-gray-600
@@ -17,7 +18,7 @@
                   flex flex-row
                   md:flex-col
                   text-center
-                  md:text-left
+                  md:text-right
                 ">
       <li class="mr-3 flex-1">
         <a href="../index.php" class="
@@ -73,6 +74,7 @@
                       hover:border-pink-500
                       md:text-3xl
                       lg:text-4xl
+                      uppercase
                       motion-safe:hover:scale-110
                     ">Drivers</a>
       </li>

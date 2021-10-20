@@ -2,7 +2,7 @@
 
 ## The project should use the following functionality:
 
-    [] Variables - at least 10 different variables
+    [x] Variables - at least 10 different variables
     [x] Multiple data types - use strings, integers, booleans, arrays (null values if you want too 🤷)
     [x] Arrays - use at least 1 indexed, 1 associative array and 1 multi-dimensional array
     [x] Functions - define at least 2 functions which accepts arguments and use at least 2 different built-in functions such as date() for example, you're free to choose which built-in functions
