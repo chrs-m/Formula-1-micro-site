@@ -15,19 +15,19 @@
 
 [x] The project should implement an accessible graphical user interface.
 
-[] The project should be uploaded to you One.com domain, you may use a sub directory for this (e.g. example.com/my-project-name).
+[x] The project should be uploaded to you One.com domain, you may use a sub directory for this (e.g. example.com/my-project-name).
 
 [x] The project should not print any HTML within PHP strings.
 
 [] The project should not include any coding errors, warning or notices.
 
-[] The project should be tested on at least two of your classmates computers. Add the testers to the README.md file.
+[x] The project should be tested on at least two of your classmates computers. Add the testers to the README.md file.
 
 [x] The repository should be created from the template repository yrgo/template-the-elephpant-in-the-room.
 
 [x] The repository should have at least 10 commits and not just one big commit.
 
-[] The repository should contain a README.md file with installation instructions and documentation.
+[x] The repository should contain a README.md file with installation instructions and documentation.
 
 [x] The repository should contain a LICENSE file.
 

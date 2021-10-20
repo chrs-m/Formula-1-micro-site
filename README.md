@@ -2,11 +2,12 @@
 
 # Project Title
 
-Text about the project and why it exists. This would also be a great place to link the project on One.com.
+A micro site with snippets of information about the teams and drivers in Formula 1.
+[Link](https://chris-m.se/php-project/)
 
 # Installation
 
-Add the installation instructions.
+Clone repo, run PHP localhost from terminal.
 
 # Code Review
 
@@ -22,5 +23,5 @@ Code review written by [Marcus Hägerstrand](https://github.com/marcusxyz).
 
 Tested by the following people:
 
-1. TBA
-2. TBA
+1. Theo Sandell
+2. Patrik Staaf

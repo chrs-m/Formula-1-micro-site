@@ -12,16 +12,16 @@
               h-10
               md:h-screen md:border-r-4 md:border-gray-600
             ">
-    <div class="md:relative mx-auto lg:float-right lg:px-6">
-        <ul class="
+  <div class="md:relative mx-auto lg:float-right lg:px-6">
+    <ul class="
                   list-reset
                   flex flex-row
                   md:flex-col
                   text-center
                   md:text-right
                 ">
-            <li class="mr-3 flex-1">
-                <a href="../index.php" class="
+      <li class="mr-3 flex-1">
+        <a href="./PHP/index.php" class="
                       pb-1
                       md:pb-0
                       text-xl
@@ -38,9 +38,9 @@
                       uppercase
                       motion-safe:hover:scale-110
                     ">Start</a>
-            </li>
-            <li class="mr-3 flex-1">
-                <a href="../PHP/teams.php" class="
+      </li>
+      <li class="mr-3 flex-1">
+        <a href="./PHP/teams.php" class="
                       pb-1
                       md:pb-0
                       text-xl
@@ -57,9 +57,9 @@
                       lg:text-4xl
                       motion-safe:hover:scale-110
                     ">Teams</a>
-            </li>
-            <li class="mr-3 flex-1">
-                <a href="../PHP/drivers.php" class="
+      </li>
+      <li class="mr-3 flex-1">
+        <a href="./PHP/drivers.php" class="
                       pb-1
                       md:pb-0
                       text-xl
@@ -76,7 +76,7 @@
                       lg:text-4xl
                       motion-safe:hover:scale-110
                     ">Drivers</a>
-            </li>
-        </ul>
-    </div>
+      </li>
+    </ul>
+  </div>
 </div>
