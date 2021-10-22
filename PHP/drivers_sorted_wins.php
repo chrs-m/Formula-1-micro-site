@@ -2,9 +2,13 @@
 <?php require __DIR__ . '/navbar_drivers.php'; ?>
 
 
+<?php $sortByWins = array_column($drivers, 'wins');
+(array_multisort($sortByWins, SORT_DESC, $drivers));
+?>
+
 <div class="mb-5 mt-5">
     <div class="">
-        <a class="absolute right-0" href="drivers_sorted_wins.php">Sort by wins</a>
+        <a class="absolute right-0" href="drivers.php">Sort by team</a>
         <a class="absolute right-0 top-10" href="drivers_sorted_name.php">Sort by name</a>
         <main class="grid grid-cols-2 gap-1">
             <?php foreach ($drivers as $driver) : ?>
