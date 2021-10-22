@@ -10,8 +10,8 @@ if (isset($_GET['sorting']) && !empty($_GET['sorting'])) {
 
 <div class="mb-5 mt-5">
     <div class="">
-        <form class="absolute right-0" action="./teams.php" id="sorting-form">
-            <label class="mr-2" for="sorting">Sort by:</label>
+        <form class="absolute right-[33%] text-xs sm:right-[5%] sm:text-lg" action="./teams.php" id="sorting-form">
+            <label class="mr-1" for="sorting">Sort by:</label>
             <select class="border border-black rounded-md" name="sorting" id="">
                 <option value="name" disabled selected> </option>
                 <option value="team">Default</option>

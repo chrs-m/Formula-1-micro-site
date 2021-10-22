@@ -11,8 +11,8 @@ if (isset($_GET['sorting']) && !empty($_GET['sorting'])) {
 
 <div class="mb-5 mt-5">
     <div class="">
-        <form class="absolute right-0" action="./drivers.php" id="sorting-form">
-            <label class="mr-2" for="sorting">Sort by:</label>
+        <form class="absolute right-[40%] text-xs sm:right-[2%] sm:text-lg" action="./drivers.php" id="sorting-form">
+            <label class="mr-1" for="sorting">Sort by:</label>
             <select class="border border-black rounded-md" name="sorting" id="">
                 <option value="team" disabled selected> </option>
                 <option value="team">Team</option>
