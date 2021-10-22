@@ -111,3 +111,38 @@ function getTimeToNextRace(array $races): string
 
     return $timeLeft;
 }
+
+
+
+function getDrivers(array $drivers, string $sorting)
+
+{
+    $sortByWins = array_column($drivers, 'wins');
+    $sortByName = array_column($drivers, 'name');
+    // SORTING = wins, name
+    if ($sorting === "wins") {
+        array_multisort($sortByWins, SORT_DESC, $drivers);
+    } else if ($sorting === "name") {
+        array_multisort($sortByName, SORT_ASC, $drivers);
+    }
+
+    return $drivers;
+}
+
+function getTeams(array $teams, string $sorting)
+
+{
+    $sortByWins = array_column($teams, 'wins');
+    $sortByName = array_column($teams, 'name');
+    $sortByChampionchips = array_column($teams, 'championchips');
+    // SORTING = wins, name
+    if ($sorting === "wins") {
+        array_multisort($sortByWins, SORT_DESC, $teams);
+    } else if ($sorting === "name") {
+        array_multisort($sortByName, SORT_ASC, $teams);
+    } else if ($sorting === "championchips") {
+        array_multisort($sortByChampionchips, SORT_DESC, $teams);
+    }
+
+    return $teams;
+}

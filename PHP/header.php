@@ -23,6 +23,7 @@ require __DIR__ . '/functions.php';
     <link rel="stylesheet" href="CSS/navigation.css" />
     <link rel="stylesheet" href="../CSS/navigation.css" />
     <script src="https://cdn-tailwindcss.vercel.app/"></script>
+    <script src="../js/sort.js"></script>
 </head>
 
 <body class="w-full md:w-4/5 md:ml-auto lg:ml-auto">

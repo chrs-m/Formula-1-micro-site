@@ -2,12 +2,28 @@
 <?php require __DIR__ . '/navbar_drivers.php'; ?>
 
 
+<?php
+$sorting = 'team';
+
+if (isset($_GET['sorting']) && !empty($_GET['sorting'])) {
+    $sorting = $_GET['sorting'];
+} ?>
+
 <div class="mb-5 mt-5">
     <div class="">
-        <a class="absolute right-0" href="drivers_sorted_wins.php">Sort by wins</a>
-        <a class="absolute right-0 top-10" href="drivers_sorted_name.php">Sort by name</a>
-        <main class="grid grid-cols-2 gap-1">
-            <?php foreach ($drivers as $driver) : ?>
+        <form class="absolute right-0" action="./drivers.php" id="sorting-form">
+            <label class="mr-2" for="sorting">Sort by:</label>
+            <select class="border border-black rounded-md" name="sorting" id="">
+                <option value="team" disabled selected> </option>
+                <option value="team">Team</option>
+                <option value="wins">Wins</option>
+                <option value="name">Name</option>
+            </select>
+        </form>
+
+
+        <main class="grid grid-cols-2 gap-1 pt-10">
+            <?php foreach (getDrivers($drivers, $sorting) as $driver) : ?>
                 <article class="grid justify-items-center place-content-between mb-10 rounded-lg hover:bg-gray-100">
                     <img class="scale-90 motion-safe:hover:scale-100 filter grayscale hover:filter-none" src="<?php echo $driver['image']; ?>" alt="<?php echo $driver['name']; ?>">
                     <h2 class="uppercase font-bold sm:text-lg text-xs text-center hover:text-pink-500"><a href="<?php echo $driver['website'] ?>"><?php echo $driver['name']; ?></a></h2>
