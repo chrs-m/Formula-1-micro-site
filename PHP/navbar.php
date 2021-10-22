@@ -21,7 +21,7 @@
                   md:text-right
                 ">
       <li class="mr-3 flex-1">
-        <a href="/index.php" class="
+        <a href="../index.php" class="
                       pb-1
                       md:pb-0
                       text-xl
