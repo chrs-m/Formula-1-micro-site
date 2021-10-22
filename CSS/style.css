@@ -96,6 +96,7 @@ body {
   top: -63%;
   left: -15%;
   font-size: 3rem;
+  animation: text linear forwards 4s;
 }
 
 /* TEAMS SECTION */
