@@ -23,7 +23,12 @@
         </main>
     </div>
 </div>
-
+<style>
+    ul>li:nth-of-type(1)>a {
+        color: white;
+        text-transform: uppercase;
+    }
+</style>
 
 
 

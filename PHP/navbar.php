@@ -21,26 +21,26 @@
                   md:text-right
                 ">
       <li class="mr-3 flex-1">
-        <a href="index.php" class="
+        <a href="/index.php" class="
                       pb-1
                       md:pb-0
                       text-xl
                       md:text-base
-                      text-white
+                      text-gray-600
+                      md:text-gray-400
                       block
                       md:inline-block
                       hover:text-white
                       border-b-2 border-gray-800
                       md:border-gray-900
                       hover:border-pink-500
-                      md:text-3xl
+                      md:text-2xl
                       lg:text-4xl
-                      uppercase
                       motion-safe:hover:scale-110
                     ">Start</a>
       </li>
       <li class="mr-3 flex-1">
-        <a href="./PHP/teams.php" class="
+        <a href="/PHP/teams.php" class="
                       pb-1
                       md:pb-0
                       text-xl
@@ -59,7 +59,7 @@
                     ">Teams</a>
       </li>
       <li class="mr-3 flex-1">
-        <a href="./PHP/drivers.php" class="
+        <a href="/PHP/drivers.php" class="
                       pb-1
                       md:pb-0
                       text-xl

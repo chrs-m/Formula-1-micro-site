@@ -1,5 +1,5 @@
 <?php require __DIR__ . '/header.php'; ?>
-<?php require __DIR__ . '/navbar_teams.php'; ?>
+<?php require __DIR__ . '/navbar.php'; ?>
 
 <?php
 $sorting = 'team';
@@ -44,6 +44,11 @@ if (isset($_GET['sorting']) && !empty($_GET['sorting'])) {
             </main>
         </div>
 
-
+        <style>
+            ul>li:nth-of-type(2)>a {
+                color: white;
+                text-transform: uppercase;
+            }
+        </style>
 
         <?php require __DIR__ . '/footer.php'; ?>

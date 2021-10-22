@@ -1,5 +1,5 @@
 <?php require __DIR__ . '/header.php'; ?>
-<?php require __DIR__ . '/navbar_drivers.php'; ?>
+<?php require __DIR__ . '/navbar.php'; ?>
 
 
 <?php
@@ -39,6 +39,12 @@ if (isset($_GET['sorting']) && !empty($_GET['sorting'])) {
         </main>
     </div>
 </div>
+<style>
+    ul>li:nth-of-type(3)>a {
+        color: white;
+        text-transform: uppercase;
+    }
+</style>
 
 
 
