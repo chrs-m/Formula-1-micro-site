@@ -7,6 +7,7 @@
         <main class="block">
             <article class="start-grid justify-items-center place-content-between mb-10 rounded-lg">
                 <div class="emoji-orbit">🏎</div>
+                <div class="emoji-track opacity-0 sm:opacity-100"></div>
                 <div class="text-container">
                     <div class="animation one"></div>
                     <div class="text one">Welcome to</div>

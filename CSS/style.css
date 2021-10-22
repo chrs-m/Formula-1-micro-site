@@ -85,6 +85,45 @@ body {
   font-size: 3rem;
   animation: orbit 3s linear infinite 2.5s;
 }
+.emoji-track {
+  border: 4px solid rgb(90, 90, 90);
+  border-radius: 50%;
+  height: 485px;
+  width: 485px;
+  position: absolute;
+  display: inline-block;
+  opacity: 1;
+  top: -63%;
+  left: -15%;
+  font-size: 3rem;
+}
+
+/* TEAMS SECTION */
+
+.mainDiv {
+  height: 100vh;
+  display: flex;
+}
+
+.teamsMain {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.teamsArticle {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.teamLogo {
+  display: flex;
+  transform: scale(0.8);
+  margin-bottom: -40px;
+}
+
+/* ANIMATIONS */
 
 @keyframes textRevealOne {
   0% {
@@ -164,31 +203,7 @@ body {
   }
 }
 
-/* TEAMS SECTION */
-
-.mainDiv {
-  height: 100vh;
-  display: flex;
-}
-
-.teamsMain {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.teamsArticle {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
-}
-
-.teamLogo {
-  display: flex;
-  transform: scale(0.8);
-  margin-bottom: -40px;
-}
-
+/* MEDIA QUERIES */
 @media screen and (min-width: 320px) {
   .teamsArticle {
     font-size: 0.5rem;

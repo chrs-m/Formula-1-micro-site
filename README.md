@@ -7,7 +7,8 @@ A micro site with snippets of information about the teams and drivers in Formula
 
 # Installation
 
-Clone repo, run PHP localhost from terminal.
+1. Clone repo from GitHub.
+2. run PHP localhost from terminal (PHP -S localhost:8000) from root folder.
 
 # Code Review
 
