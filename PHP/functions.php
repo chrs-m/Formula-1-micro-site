@@ -4,35 +4,32 @@ declare(strict_types=1);
 
 require __DIR__ . '/data.php';
 
-
+// FUNCTION TO GET THE DRIVERS ASSOCIATED TEAM
 function getTeamFromDriver(array $driverList, string $driver): array
 {
     $returnTeam = [];
     foreach ($driverList as $name) {
-        // print_r($name['name'] . "\n");
         if ($name['name'] === $driver) {
             array_push($returnTeam, $name['team']);
         }
     }
     return $returnTeam;
 };
-// print_r(getTeamFromDriver($drivers, 'Lewis Hamilton'));
 
-
+// FUNCTION TO GET DRIVERS TO THEIR ASSOCIATED TEAMS
 function getDriversFromTeam(array $driverList, string $team): array
 {
     $returnDriver = [];
     foreach ($driverList as $name) {
-        // print_r($name['name'] . "\n");
         if ($name['team'] === $team) {
             array_push($returnDriver, $name['name']);
         }
     }
     return $returnDriver;
 };
-// print_r(getDriversFromTeam($drivers, 'McLaren F1 Team'));
 
 
+// A FUNCTION TO SEE IF A DRIVER IS A WINNER THIS SEASON OR NOT
 function isDriverAWinnerThisSeason(array $drivers): void
 {
     foreach ($drivers as $driver) {
@@ -44,31 +41,34 @@ function isDriverAWinnerThisSeason(array $drivers): void
     }
 };
 
+//SIMPLIFIED FUNCTION TO CHECK IF A DRIVER IS A WINNER THIS SEASON
 function isWinnerThisSeason(bool $hasWon): string
 {
     return $hasWon ? "Yes" : "No";
 };
 
+//FUNCTION TO GET DRIVERS AGE
 function age(int $birthyear): int
 {
     return (date('Y')) - $birthyear;
 }
 
-// echo age($drivers);
+
+
+//FUNCTION TO GET TIME TO RACE, ** NOT IN USE! **
+function timeToNextRace()
+{
+    $date = strtotime("2021-10-24");
+    $remaining = $date - time();
+
+    $days_remaining = floor($remaining / 86400);
+    $hours_remaining = floor(($remaining % 86400) / 3600);
+    echo "$days_remaining days and $hours_remaining hours left";
+}
 
 
 
-
-// function timeToNextRace()
-// {
-//     $date = strtotime("2021-10-24");
-//     $remaining = $date - time();
-
-//     $days_remaining = floor($remaining / 86400);
-//     $hours_remaining = floor(($remaining % 86400) / 3600);
-//     echo "$days_remaining days and $hours_remaining hours left";
-// }
-
+//FUNCTION TO GET DATA FOR UPCOMING RACE
 function nextRace(array $races): array
 {
     $i = 0;
@@ -81,18 +81,22 @@ function nextRace(array $races): array
     }
 }
 
+
+//FUNCTION TO GET LOCATION DATA FOR UPCOMING RACE
 function getLocation(array $races): string
 {
     $nextRace = nextRace($races);
     return $nextRace['location'];
 }
 
+//FUNCTION TO GET CIRCUIT DATA FOR UPCOMING RACE
 function getCircuit(array $races): string
 {
     $nextRace = nextRace($races);
     return $nextRace['circuit'];
 }
 
+//FUNCTION TO GET REMAINING TIME TO NEXT RACE
 function getTimeToNextRace(array $races): string
 {
     $nextRace = nextRace($races);
@@ -113,7 +117,7 @@ function getTimeToNextRace(array $races): string
 }
 
 
-
+//FILTER/SORTING FUNCTION FOR DRIVERS
 function getDrivers(array $drivers, string $sorting)
 
 {
@@ -129,6 +133,7 @@ function getDrivers(array $drivers, string $sorting)
     return $drivers;
 }
 
+//FILTER/SORTING FUNCTION FOR TEAMS
 function getTeams(array $teams, string $sorting)
 
 {

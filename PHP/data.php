@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-
+// DRIVERS DATA
 $drivers = [
     [
         'name' => 'Lewis Hamilton',
@@ -207,6 +207,8 @@ $drivers = [
 
 ];
 
+
+// TEAMS DATA
 $teams = [
     [
         'name' => 'Mercedes-AMG Petronas F1 Team',
@@ -308,7 +310,7 @@ $teamsWithWinsThisSeason = [
     'Alpine F1 Team'
 ];
 
-
+// RACES DATA
 $races = [
     ['location' => 'United states', 'date' => '1635033600', 'dateTime' => '2021-10-24 21:00:00', 'circuit' => 'Circuit of The Americas'],
     ['location' => 'Mexico', 'date' => '1636243200', 'dateTime' => '2021-11-07 20:00:00', 'circuit' => 'Autódromo Hermanos Rodríguez'],

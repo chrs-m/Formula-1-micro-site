@@ -2,6 +2,7 @@
 <?php require __DIR__ . '/navbar.php'; ?>
 
 
+<!-- SORTING FUNCTION -->
 <?php
 $sorting = 'team';
 
@@ -21,7 +22,7 @@ if (isset($_GET['sorting']) && !empty($_GET['sorting'])) {
             </select>
         </form>
 
-
+        <!-- DRIVERS INFO -->
         <main class="grid grid-cols-1 sm:grid-cols-2 sm:gap-1 pt-10">
             <?php foreach (getDrivers($drivers, $sorting) as $driver) : ?>
                 <article class="grid justify-items-center place-content-between mb-10 rounded-lg hover:bg-gray-100">
@@ -39,6 +40,8 @@ if (isset($_GET['sorting']) && !empty($_GET['sorting'])) {
         </main>
     </div>
 </div>
+
+<!-- NAVBAR FIX -->
 <style>
     ul>li:nth-of-type(3)>a {
         color: white;

@@ -1,6 +1,8 @@
 <?php require __DIR__ . '/header.php'; ?>
 <?php require __DIR__ . '/navbar.php'; ?>
 
+
+<!-- SORTING FUNCTION -->
 <?php
 $sorting = 'team';
 
@@ -21,7 +23,7 @@ if (isset($_GET['sorting']) && !empty($_GET['sorting'])) {
             </select>
         </form>
 
-
+        <!-- TEAMS INFO -->
         <div class="mb-20">
             <main class="grid grid-cols-1 sm:grid-cols-2 sm:gap-1 pt-10">
                 <?php foreach (getTeams($teams, $sorting) as $team) : ?>
@@ -44,6 +46,7 @@ if (isset($_GET['sorting']) && !empty($_GET['sorting'])) {
             </main>
         </div>
 
+        <!-- NAVBAR FIX -->
         <style>
             ul>li:nth-of-type(2)>a {
                 color: white;
