@@ -17,8 +17,9 @@ require __DIR__ . '/functions.php';
     <link href="https://unpkg.com/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-    <link rel="stylesheet" href="CSS/style.css" />
+
     <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/keyframes.css" />
     <script src="https://cdn-tailwindcss.vercel.app/"></script>
     <script src="../JS/sort.js"></script>
 </head>

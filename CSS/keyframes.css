@@ -1,0 +1,79 @@
+/* ANIMATIONS */
+
+@keyframes textRevealOne {
+  0% {
+    transform: translate(100%, 0);
+    bbackground: #ed213a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291e, #ed213a);
+    background: linear-gradient(to right, #93291e, #ed213a);
+  }
+  50% {
+    background: #ed213a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291e, #ed213a);
+    background: linear-gradient(to right, #93291e, #ed213a);
+
+    transform: translate(0%, 0);
+  }
+  100% {
+    background: #ed213a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291e, #ed213a);
+    background: linear-gradient(to right, #93291e, #ed213a);
+
+    transform: translate(-100%, 0);
+  }
+}
+@keyframes textRevealTwo {
+  0% {
+    transform: translate(100%, 0);
+    background: #ed213a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291e, #ed213a);
+    background: linear-gradient(to right, #93291e, #ed213a);
+  }
+  50% {
+    background: #ed213a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291e, #ed213a);
+    background: linear-gradient(to right, #93291e, #ed213a);
+
+    transform: translate(0%, 0);
+  }
+  100% {
+    background: #ed213a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #93291e, #ed213a);
+    background: linear-gradient(to right, #93291e, #ed213a);
+
+    transform: translate(-100%, 0);
+  }
+}
+@keyframes emojiReveal {
+  0% {
+    opacity: 1;
+    transform: translate(100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-100%, 0);
+  }
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 1;
+  }
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(220px) rotate(-90deg);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(360deg) translateX(220px) rotate(-90deg);
+    opacity: 1;
+  }
+}

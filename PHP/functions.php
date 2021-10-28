@@ -139,13 +139,13 @@ function getTeams(array $teams, string $sorting)
 {
     $sortByWins = array_column($teams, 'wins');
     $sortByName = array_column($teams, 'name');
-    $sortByChampionchips = array_column($teams, 'championchips');
+    $sortByChampionchips = array_column($teams, 'championships');
     // SORTING = wins, name
     if ($sorting === "wins") {
         array_multisort($sortByWins, SORT_DESC, $teams);
     } else if ($sorting === "name") {
         array_multisort($sortByName, SORT_ASC, $teams);
-    } else if ($sorting === "championchips") {
+    } else if ($sorting === "championships") {
         array_multisort($sortByChampionchips, SORT_DESC, $teams);
     }
 
